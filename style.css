@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(56, 52, 56);
+  color: #fff;
+}
+
+#header-img {
+  background-size: cover;
+  border-radius: 50%;
+  width: 2.5rem;
+}
+
+#header-img:hover {
+  transition: 0.5s ease-in;
+  transform: scale(1.4);
+}
+
+#title {
+  flex: 1;
+  margin: 0 1rem;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px rgb(170, 206, 41);
+}
+
+#title a {
+  color: #fff;
+}
+
+#navbar ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.nav-links {
+  padding: 0 2rem;
+  font-size: 1.8rem;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid rgb(208, 245, 1);
+}
+
+#banner {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(57, 200, 125, 1) 0%,
+    rgba(40, 170, 100, 1) 0%,
+    rgba(41, 163, 157, 0) 20%,
+    rgba(39, 145, 167, 1) 100%
+  );
+  /* background-color: #054422; */
+  color: #fff;
+}
+.banner-image img {
+  width: 50vw;
+  background-size: cover;
+  margin-bottom: -0.5rem;
+}
+
+#banner #form {
+  background: rgba(216, 31, 139, 0.4)
+    url("https://www.telegraph.co.uk/content/dam/food-and-drink/2018/06/01/TELEMMGLPICT000165138627_trans%2B%2BNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.jpeg")
+    no-repeat center;
+  /* background-image: url("https://polarbear.co.in/wp-content/uploads/2020/01/veg-icecrem.jpg"); */
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+#form #email {
+  width: 60%;
+  font-size: 1.6rem;
+  padding: 0.6rem 2rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: rgba(129, 9, 83, 0.952);
+  color: #fff;
+  opacity: 1;
+}
+#form #email:focus {
+  background-color: rgb(216, 30, 123);
+}
+
+#form #submit {
+  border: none;
+  font-size: 1.6rem;
+  margin: 1rem auto;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  background-color: rgb(143, 10, 77);
+  color: #fff;
+  text-shadow: 4px 4px 10px rgb(25, 26, 25);
+  opacity: 1;
+}
+#form #submit:hover {
+  background-color: rgb(228, 24, 126);
+}
+
+#how-to-order {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-around;
+  /* align-items: center; */
+  gap: 2rem;
+  padding: 8rem 0;
+}
+.how-to-order-cards {
+  border-radius: 20px;
+  /* background-color: rgba(230, 70, 168, 0.952); */
+}
+.how-to-order-cards .icon {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.how-to-order-cards h4 {
+  font-size: 2.2rem;
+  text-align: center;
+  /* padding-top: 1rem; */
+}
+
+.how-to-order-cards p {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 1rem 0.6rem 2rem 0.6rem;
+}
+
+/* Products Styling */
+#products {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 40vh);
+  gap: 2rem;
+  justify-content: space-around;
+  background-color: rgba(158, 12, 107, 0.2);
+}
+.product-cards {
+  border: 3px solid red;
+}
+
+.product-image {
+  width: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-cards h4 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+.product-cards a {
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-align: center;
+  background-color: rgb(192, 22, 107);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  margin-left: 40%;
+  text-shadow: 4px 4px 10px rgb(25, 26, 25);
+}
+.product-cards a:hover {
+  background-color: rgb(245, 63, 154);
+}
+
+/* Video Styling */
+#video {
+  padding: 2rem 0;
+  background-color: rgba(129, 9, 83, 0.952);
+}
+#video iframe {
+  width: 60%;
+  height: 50vh;
+  margin-left: 20%;
+  border-radius: 10px;
+}
+
+#plans {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  margin-top: 10rem;
+  justify-content: center;
+}
+.plan-card {
+  height: 40vh;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+}
+.free {
+  background-color: teal;
+  color: #fff;
+}
+.standard {
+  background-color: rgb(16, 110, 82);
+  color: #fff;
+}
+.premium {
+  background-color: rgb(65, 17, 9);
+  color: #fff;
+  height: 45vh;
+  position: relative;
+  top: -5rem;
+}
+.premium .plan-price {
+  padding-top: 5rem;
+}
+.plan-price {
+  font-size: 3.4rem;
+}
+.plan-period {
+  font-size: 2rem;
+}
+.plan-name {
+  background-color: rgb(88, 136, 44);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+.features li {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.subscribe {
+  font-size: 1.8rem;
+  background-color: rgb(207, 204, 28);
+  padding: 1rem 2rem;
+  font-size: 200;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  position: relative;
+  bottom: -14px;
+}
+.subscribe:hover {
+  background-color: rgb(236, 234, 87);
+}
+/* Footer styling */
+#footer {
+  background-color: rgb(56, 52, 56);
+  color: #fff;
+}
+#footer p {
+  font-size: 1.6rem;
+  padding: 2rem;
+  text-align: center;
+}

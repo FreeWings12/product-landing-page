@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="    https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="contsiner">
+    <div class="container">
         <header id="header">
-            <img src="https://www.epicentrofestival.com/wp-content/uploads/2019/12/Transparent-Ice-Cream-Cone-Picture-Clipart-Sorvete-Desenho-Colorido-Png.jpg"
-                alt="logo" id="header-img" width="20">
-            <h1 id="title">The Ice Cream Hut</h1>
+            <a href="index.html"><img
+                    src="https://www.epicentrofestival.com/wp-content/uploads/2019/12/Transparent-Ice-Cream-Cone-Picture-Clipart-Sorvete-Desenho-Colorido-Png.jpg"
+                    alt="logo" id="header-img" width="20">
+            </a>
+            <h1 id="title"> <a href="index.html">The Ice Cream Hut</a> </h1>
             <nav id="navbar">
                 <ul>
                     <li class="nav-links"><a href="#video">Video</a></li>
@@ -35,17 +39,17 @@
             </section>
             <section id="how-to-order">
                 <div class="how-to-order-cards">
-                    <span class="icon"></span>
+                    <i class="fa fa-hand-o-right icon" aria-hidden="true"></i>
                     <h4>Select</h4>
                     <p>Select your favourite ice cream from various falvours</p>
                 </div>
                 <div class="how-to-order-cards">
-                    <span class="icon"></span>
+                    <i class="fa fa-shopping-bag icon" aria-hidden="true"></i>
                     <h4>Order</h4>
                     <p>Place the order with simple steps</p>
                 </div>
                 <div class="how-to-order-cards">
-                    <span class="icon"></span>
+                    <i class="fa fa-truck icon" aria-hidden="true"></i>
                     <h4>Delivered</h4>
                     <p>Yupp!! Your favorite <strong>Ice Cream</strong> will be delivered within 30mins</p>
                 </div>
@@ -91,41 +95,50 @@
             </section>
             <section id="video">
 
-                <iframe width="600" height="250" src="https://www.youtube.com/embed/kSiYIexPVbU">
+                <iframe src="https://www.youtube.com/embed/kSiYIexPVbU">
                     <!-- <source src="https://www.youtube.com/watch?v=kSiYIexPVbU" type="video/mp4">
                     <source src="https://www.youtube.com/watch?v=kSiYIexPVbU" type="video/ogg"> -->
                 </iframe>
             </section>
             <section id="plans">
-                <div class="plan-card">
-                    <h2 class="plan-price">100</h2>
+                <div class="plan-card free">
+                    <h2 class="plan-price">&#x20b9; 0</h2>
                     <p class="plan-period">Per month</p>
-                    <h3 class="plan-name">Standerd</h3>
-                    <h5 class="features">jqsbd</h5>
-                    <h5 class="features">,fjn</h5>
-                    <h5 class="features">dhsj</h5>
+                    <h3 class="plan-name">Free</h3>
+                    <ul class="features">
+                        <li>Hello World</li>
+                        <li>Hello World</li>
+                        <li>Hello World</li>
+                    </ul>
+                    <a href="#" class="subscribe">Subscribe</a>
                 </div>
-                <div class="plan-card">
-                    <h2 class="plan-price">100</h2>
+                <div class="plan-card premium">
+                    <h2 class="plan-price"> &#x20b9; 199</h2>
                     <p class="plan-period">Per month</p>
-                    <h3 class="plan-name">Standerd</h3>
-                    <h5 class="features">jqsbd</h5>
-                    <h5 class="features">,fjn</h5>
-                    <h5 class="features">dhsj</h5>
+                    <h3 class="plan-name">Premium</h3>
+                    <ul class="features">
+                        <li>Hello World</li>
+                        <li>Hello World</li>
+                        <li>Hello World</li>
+                    </ul>
+                    <a href="#" class="subscribe">Subscribe</a>
                 </div>
-                <div class="plan-card">
-                    <h2 class="plan-price">100</h2>
+                <div class="plan-card standard">
+                    <h2 class="plan-price">&#x20b9; 99</h2>
                     <p class="plan-period">Per month</p>
                     <h3 class="plan-name">Standerd</h3>
-                    <h5 class="features">jqsbd</h5>
-                    <h5 class="features">,fjn</h5>
-                    <h5 class="features">dhsj</h5>
+                    <ul class="features">
+                        <li>Hello World</li>
+                        <li>Hello World</li>
+                        <li>Hello World</li>
+                    </ul>
+                    <a href="#" class="subscribe">Subscribe</a>
                 </div>
 
             </section>
         </main>
         <footer id="footer">
-            <p>&copy;All rights reserved to <strong> The Ice Cream Hut</strong> 2020</p>
+            <p>&copy; All rights reserved to <strong> The Ice Cream Hut</strong> 2020</p>
         </footer>
     </div>
 </body>
