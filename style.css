@@ -164,7 +164,7 @@ button {
 }
 
 .how-to-order-cards p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-align: center;
   padding: 1rem 0.6rem 2rem 0.6rem;
 }
@@ -172,21 +172,24 @@ button {
 /* Products Styling */
 #products {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(2, 40vh);
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: repeat(2, 45vh);
   gap: 2rem;
   justify-content: space-around;
-  background-color: rgba(158, 12, 107, 0.2);
 }
 .product-cards {
-  border: 3px solid red;
+  background-color: rgba(158, 12, 107, 0.2);
+  margin-bottom: 2rem;
+  border-radius: 5px;
 }
 
 .product-image {
-  width: 40%;
+  height: 75%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 5px;
 }
 .product-cards h4 {
   font-size: 2.2rem;
@@ -201,7 +204,7 @@ button {
   color: #fff;
   padding: 0.8rem 2rem;
   border-radius: 5px;
-  margin-left: 40%;
+  margin-left: 33%;
   text-shadow: 4px 4px 10px rgb(25, 26, 25);
 }
 .product-cards a:hover {
@@ -245,7 +248,7 @@ button {
   color: #fff;
   height: 45vh;
   position: relative;
-  top: -5rem;
+  top: -4.8rem;
 }
 .premium .plan-price {
   padding-top: 5rem;
@@ -289,4 +292,340 @@ button {
   font-size: 1.6rem;
   padding: 2rem;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  #products {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 45vh);
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  #video iframe {
+    width: 80vw;
+    height: 50vh;
+    margin-left: 10vw;
+    border-radius: 10px;
+  }
+  #plans {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    margin-top: 10rem;
+    justify-content: center;
+  }
+  .premium {
+    background-color: rgb(65, 17, 9);
+    color: #fff;
+    height: 45vh;
+    position: relative;
+    top: -4.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #products {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(3, 42vh);
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .product-cards h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .product-cards a {
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-align: center;
+    background-color: rgb(192, 22, 107);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    margin-left: 30%;
+    text-shadow: 4px 4px 10px rgb(25, 26, 25);
+  }
+
+  #video iframe {
+    width: 100vw;
+    height: 50vh;
+    margin-left: 0;
+    border-radius: 10px;
+  }
+
+  #plans {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    margin-top: 10rem;
+    justify-content: center;
+  }
+  .plan-card {
+    height: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .free {
+    background-color: teal;
+    color: #fff;
+  }
+  .standard {
+    background-color: rgb(16, 110, 82);
+    color: #fff;
+  }
+  .premium {
+    background-color: rgb(65, 17, 9);
+    color: #fff;
+    height: 45vh;
+    position: relative;
+    top: -4.3rem;
+  }
+  .premium .plan-price {
+    padding-top: 5rem;
+  }
+  .plan-price {
+    font-size: 3.2rem;
+  }
+  .plan-period {
+    font-size: 1.7rem;
+  }
+  .plan-name {
+    background-color: rgb(88, 136, 44);
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+  .features li {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+  }
+  .subscribe {
+    font-size: 1.6rem;
+    background-color: rgb(207, 204, 28);
+    padding: 1rem 2rem;
+    font-size: 200;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    bottom: -14px;
+  }
+}
+
+@media (max-width: 600px) {
+  #header {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56, 52, 56);
+    color: #fff;
+    padding-top: 1rem;
+  }
+
+  #title {
+    flex: 1;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgb(170, 206, 41);
+  }
+
+  .nav-links {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+  }
+
+  #banner {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    background: linear-gradient(
+      90deg,
+      rgba(57, 200, 125, 1) 0%,
+      rgba(40, 170, 100, 1) 0%,
+      rgba(41, 163, 157, 0) 20%,
+      rgba(39, 145, 167, 1) 100%
+    );
+    color: #fff;
+  }
+  .banner-image img {
+    width: 100vw;
+    background-size: cover;
+    margin-bottom: -0.5rem;
+  }
+
+  #banner #form {
+    background: rgba(216, 31, 139, 0.4)
+      url("https://www.telegraph.co.uk/content/dam/food-and-drink/2018/06/01/TELEMMGLPICT000165138627_trans%2B%2BNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.jpeg")
+      no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100vw;
+  }
+
+  #form #email {
+    width: 60%;
+    font-size: 1.6rem;
+    padding: 0.6rem 2rem;
+    margin-top: 3rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(129, 9, 83, 0.952);
+    color: #fff;
+    opacity: 1;
+  }
+
+  #form #submit {
+    border: none;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    background-color: rgb(143, 10, 77);
+    color: #fff;
+    text-shadow: 4px 4px 10px rgb(25, 26, 25);
+    opacity: 1;
+  }
+
+  #how-to-order {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+    padding: 8rem 0;
+  }
+  .how-to-order-cards {
+    border-radius: 20px;
+  }
+
+  .how-to-order-cards .icon {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .how-to-order-cards h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .how-to-order-cards p {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem 0.6rem 2rem 0.6rem;
+  }
+
+  /* Products Styling */
+
+  #products {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(8, 60vh);
+    gap: 2rem;
+    justify-content: space-around;
+  }
+
+  .product-cards h4 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .product-cards a {
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-align: center;
+    background-color: rgb(192, 22, 107);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    margin-left: 33vw;
+    text-shadow: 4px 4px 10px rgb(25, 26, 25);
+  }
+
+  #plans {
+    display: grid;
+    grid-template-columns: 80%;
+    margin-top: 10rem;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  .plan-card {
+    height: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .free {
+    background-color: teal;
+    color: #fff;
+  }
+  .standard {
+    background-color: rgb(16, 110, 82);
+    color: #fff;
+  }
+  .premium {
+    background-color: rgb(65, 17, 9);
+    color: #fff;
+    height: 45vh;
+    position: relative;
+    top: 0rem;
+  }
+  .premium .plan-price {
+    padding-top: 5rem;
+  }
+  .plan-price {
+    font-size: 3.4rem;
+  }
+  .plan-period {
+    font-size: 2rem;
+  }
+  .plan-name {
+    background-color: rgb(88, 136, 44);
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+  .features li {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  .subscribe {
+    font-size: 1.8rem;
+    background-color: rgb(207, 204, 28);
+    padding: 1rem 2rem;
+    font-size: 200;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    position: relative;
+    bottom: -14px;
+  }
+  .subscribe:hover {
+    background-color: rgb(236, 234, 87);
+  }
+}
+
+@media (max-width: 350px) {
+  #navbar ul {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  #how-to-order {
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-around;
+    padding: 8rem 0;
+  }
 }
