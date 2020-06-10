@@ -138,14 +138,19 @@ button {
 #form #submit:hover {
   background-color: rgb(228, 24, 126);
 }
-
-#how-to-order {
+#how-to-order h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  padding-top: 4rem;
+  text-decoration: underline;
+}
+#how-to-order .card {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   justify-content: space-around;
   /* align-items: center; */
   gap: 2rem;
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 .how-to-order-cards {
   border-radius: 20px;
@@ -473,7 +478,7 @@ button {
   }
 
   #form #email {
-    width: 60%;
+    width: 90%;
     font-size: 1.6rem;
     padding: 0.6rem 2rem;
     margin-top: 3rem;
@@ -497,11 +502,11 @@ button {
     opacity: 1;
   }
 
-  #how-to-order {
+  #how-to-order .card {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     justify-content: space-around;
-    padding: 8rem 0;
+    padding: 3rem 0;
   }
   .how-to-order-cards {
     border-radius: 20px;
@@ -554,6 +559,8 @@ button {
   #plans {
     display: grid;
     grid-template-columns: 80%;
+    /* grid-template-rows: repeat(3, 100vh); */
+
     margin-top: 10rem;
     justify-content: center;
     gap: 2rem;
@@ -576,12 +583,12 @@ button {
   .premium {
     background-color: rgb(65, 17, 9);
     color: #fff;
-    height: 45vh;
+    /* height: 4vh; */
     position: relative;
     top: 0rem;
   }
   .premium .plan-price {
-    padding-top: 5rem;
+    padding-top: 0rem;
   }
   .plan-price {
     font-size: 3.4rem;
@@ -600,7 +607,7 @@ button {
     padding: 1rem 0;
   }
   .subscribe {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background-color: rgb(207, 204, 28);
     padding: 1rem 2rem;
     font-size: 200;
@@ -615,17 +622,17 @@ button {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   #navbar ul {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
   }
 
-  #how-to-order {
+  #how-to-order .card {
     display: grid;
     grid-template-columns: 80%;
     justify-content: space-around;
-    padding: 8rem 0;
+    padding: 3rem 0;
   }
 }
