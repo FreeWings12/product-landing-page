@@ -17,20 +17,20 @@
                     alt="logo" id="header-img" width="20">
             </a>
             <h1 id="title"> <a href="index.html">The Ice Cream Hut</a> </h1>
-            <nav id="navbar">
-                <ul>
-                    <li class="nav-links"><a href="#video">Video</a></li>
-                    <li class="nav-links"><a href="#how-to-order">How To Order</a></li>
-                    <li class="nav-links"><a href="#plans">Plans</a></li>
-                </ul>
+            <nav id="nav-bar">
+                <!-- <ul> -->
+                <a class="nav-link" href="#video">Video</a>
+                <a class="nav-link" href="#how-to-order">How To Order</a>
+                <a class="nav-link" href="#plans">Plans</a>
+                <!-- </ul> -->
             </nav>
         </header>
         <main id="main">
             <section id="banner">
                 <form action=" https://www.freecodecamp.com/email-submit" id="form" method="post"
                     class="notification-form">
-                    <input type="email" id="email" placeholder="Enter your email">
-                    <button type="submit" id="submit">Get Notification</button>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <input type="submit" id="submit" value="Get Notification">
                 </form>
                 <div class="banner-image">
                     <img src="https://static.toiimg.com/thumb/75340611.cms?width=680&height=512&imgsize=417794"
@@ -108,11 +108,9 @@
                 </div>
 
             </section>
-            <section id="video">
+            <section id="video-section">
 
-                <iframe src="https://www.youtube.com/embed/kSiYIexPVbU">
-                    <!-- <source src="https://www.youtube.com/watch?v=kSiYIexPVbU" type="video/mp4">
-                    <source src="https://www.youtube.com/watch?v=kSiYIexPVbU" type="video/ogg"> -->
+                <iframe id="video" src="https://www.youtube.com/embed/kSiYIexPVbU">
                 </iframe>
             </section>
             <section id="plans">
@@ -156,6 +154,7 @@
             <p>&copy; All rights reserved to <strong> The Ice Cream Hut</strong> 2020</p>
         </footer>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
