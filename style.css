@@ -559,18 +559,16 @@ button {
   #plans {
     display: grid;
     grid-template-columns: 80%;
-    /* grid-template-rows: repeat(3, 100vh); */
-
-    margin-top: 10rem;
+    margin-top: 6rem;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 5rem;
   }
   .plan-card {
-    height: 40vh;
     border-radius: 10px;
     text-align: center;
     align-items: center;
+    height: 60vh;
   }
   .free {
     background-color: teal;
@@ -583,7 +581,7 @@ button {
   .premium {
     background-color: rgb(65, 17, 9);
     color: #fff;
-    /* height: 4vh; */
+    /* height: inherit; */
     position: relative;
     top: 0rem;
   }
@@ -591,31 +589,31 @@ button {
     padding-top: 0rem;
   }
   .plan-price {
-    font-size: 3.4rem;
+    font-size: 2.8rem;
   }
   .plan-period {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .plan-name {
     background-color: rgb(88, 136, 44);
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     text-transform: uppercase;
     padding: 1rem 0;
   }
   .features li {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding: 1rem 0;
   }
   .subscribe {
     font-size: 1.6rem;
     background-color: rgb(207, 204, 28);
-    padding: 1rem 2rem;
+    padding: 0.6rem 2rem;
     font-size: 200;
     border-radius: 5px;
     cursor: pointer;
     color: #000;
     position: relative;
-    bottom: -14px;
+    bottom: 0px;
   }
   .subscribe:hover {
     background-color: rgb(236, 234, 87);
