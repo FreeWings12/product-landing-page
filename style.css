@@ -1,347 +1,214 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.5;
-  font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button {
-  border: none;
+    border: none;
 }
 
 .container {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 #header {
-  display: flex;
-  padding: 2rem;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(56, 52, 56);
-  color: #fff;
-  position: fixed;
-  width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56, 52, 56);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #header-img {
-  background-size: cover;
-  border-radius: 50%;
-  width: 2.5rem;
+    background-size: cover;
+    border-radius: 50%;
+    width: 2.5rem;
 }
 
 #header-img:hover {
-  transition: 0.5s ease-in;
-  transform: scale(1.4);
+    transition: 0.5s ease-in;
+    transform: scale(1.4);
 }
 
 #title {
-  flex: 1;
-  margin: 0 1rem;
-  font-size: 3.2rem;
-  font-weight: bold;
-  text-shadow: 4px 4px 10px rgb(170, 206, 41);
+    flex: 1;
+    margin: 0 1rem;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgb(170, 206, 41);
 }
 
 #title a {
-  color: #fff;
+    color: #fff;
 }
 
 #nav-bar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .nav-link {
-  margin: 0 2rem;
-  font-size: 1.8rem;
-  color: #fff;
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid rgb(208, 245, 1);
+    border-bottom: 2px solid rgb(208, 245, 1);
 }
 
 #banner {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(
-    90deg,
-    rgba(57, 200, 125, 1) 0%,
-    rgba(40, 170, 100, 1) 0%,
-    rgba(41, 163, 157, 0) 20%,
-    rgba(39, 145, 167, 1) 100%
-  );
-  /* background-color: #054422; */
-  color: #fff;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg,
+            rgba(57, 200, 125, 1) 0%,
+            rgba(40, 170, 100, 1) 0%,
+            rgba(41, 163, 157, 0) 20%,
+            rgba(39, 145, 167, 1) 100%);
+    /* background-color: #054422; */
+    color: #fff;
 }
+
 .banner-image img {
-  width: 50vw;
-  background-size: cover;
-  margin-bottom: -0.5rem;
+    width: 50vw;
+    background-size: cover;
+    margin-bottom: -0.5rem;
 }
 
 #banner #form {
-  background: rgba(216, 31, 139, 0.4)
-    url("https://www.telegraph.co.uk/content/dam/food-and-drink/2018/06/01/TELEMMGLPICT000165138627_trans%2B%2BNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.jpeg")
-    no-repeat center;
-  /* background-image: url("https://polarbear.co.in/wp-content/uploads/2020/01/veg-icecrem.jpg"); */
-  background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
+    background: rgba(216, 31, 139, 0.4) url("https://www.telegraph.co.uk/content/dam/food-and-drink/2018/06/01/TELEMMGLPICT000165138627_trans%2B%2BNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.jpeg") no-repeat center;
+    /* background-image: url("https://polarbear.co.in/wp-content/uploads/2020/01/veg-icecrem.jpg"); */
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
 }
 
 #form #email {
-  width: 60%;
-  font-size: 1.6rem;
-  padding: 0.6rem 2rem;
-  border-radius: 30px;
-  border: none;
-  outline: none;
-  background-color: rgba(129, 9, 83, 0.952);
-  color: #fff;
-  opacity: 1;
+    width: 60%;
+    font-size: 1.6rem;
+    padding: 0.6rem 2rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(129, 9, 83, 0.952);
+    color: #fff;
+    opacity: 1;
 }
+
 #form #email:focus {
-  background-color: rgb(216, 30, 123);
+    background-color: rgb(216, 30, 123);
 }
 
 #form #submit {
-  border: none;
-  font-size: 1.6rem;
-  margin: 1rem auto;
-  padding: 0.5rem 3rem;
-  border-radius: 10px;
-  background-color: rgb(143, 10, 77);
-  color: #fff;
-  text-shadow: 4px 4px 10px rgb(25, 26, 25);
-  opacity: 1;
+    border: none;
+    font-size: 1.6rem;
+    margin: 1rem auto;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    background-color: rgb(143, 10, 77);
+    color: #fff;
+    text-shadow: 4px 4px 10px rgb(25, 26, 25);
+    opacity: 1;
 }
+
 #form #submit:hover {
-  background-color: rgb(228, 24, 126);
+    background-color: rgb(228, 24, 126);
 }
+
 #how-to-order h2 {
-  font-size: 2.8rem;
-  text-align: center;
-  padding-top: 4rem;
-  text-decoration: underline;
+    font-size: 2.8rem;
+    text-align: center;
+    padding-top: 4rem;
+    text-decoration: underline;
 }
+
 #how-to-order .card {
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  justify-content: space-around;
-  /* align-items: center; */
-  gap: 2rem;
-  padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 2rem;
+    padding: 5rem 0;
 }
+
 .how-to-order-cards {
-  border-radius: 20px;
-  /* background-color: rgba(230, 70, 168, 0.952); */
+    border-radius: 20px;
+    /* background-color: rgba(230, 70, 168, 0.952); */
 }
+
 .how-to-order-cards .icon {
-  font-size: 5rem;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
 }
+
 .how-to-order-cards h4 {
-  font-size: 2.2rem;
-  text-align: center;
-  /* padding-top: 1rem; */
+    font-size: 2.2rem;
+    text-align: center;
+    /* padding-top: 1rem; */
 }
 
 .how-to-order-cards p {
-  font-size: 1.6rem;
-  text-align: center;
-  padding: 1rem 0.6rem 2rem 0.6rem;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem 0.6rem 2rem 0.6rem;
 }
 
 /* Products Styling */
 #products {
-  display: grid;
-  grid-template-columns: repeat(4, 22%);
-  grid-template-rows: repeat(2, 45vh);
-  gap: 2rem;
-  justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-template-rows: repeat(2, 45vh);
+    gap: 2rem;
+    justify-content: space-around;
 }
+
 .product-cards {
-  background-color: rgba(158, 12, 107, 0.2);
-  margin-bottom: 2rem;
-  border-radius: 5px;
+    background-color: rgba(158, 12, 107, 0.2);
+    margin-bottom: 2rem;
+    border-radius: 5px;
 }
 
 .product-image {
-  height: 75%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
+    height: 75%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
 }
+
 .product-cards h4 {
-  font-size: 2.2rem;
-  text-align: center;
-  margin: 1rem 0;
-}
-.product-cards a {
-  font-size: 1.6rem;
-  font-weight: 200;
-  text-align: center;
-  background-color: rgb(192, 22, 107);
-  color: #fff;
-  padding: 0.8rem 2rem;
-  border-radius: 5px;
-  margin-left: 33%;
-  text-shadow: 4px 4px 10px rgb(25, 26, 25);
-}
-.product-cards a:hover {
-  background-color: rgb(245, 63, 154);
-}
-
-/* Video Styling */
-#video-section {
-  padding: 2rem 0;
-  background-color: rgba(129, 9, 83, 0.952);
-}
-#video {
-  width: 60%;
-  height: 50vh;
-  margin-left: 20%;
-  border-radius: 10px;
-}
-
-#plans {
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  margin-top: 10rem;
-  justify-content: center;
-}
-.plan-card {
-  height: 40vh;
-  border-radius: 10px;
-  text-align: center;
-  align-items: center;
-}
-.free {
-  background-color: teal;
-  color: #fff;
-}
-.standard {
-  background-color: rgb(16, 110, 82);
-  color: #fff;
-}
-.premium {
-  background-color: rgb(65, 17, 9);
-  color: #fff;
-  height: 45vh;
-  position: relative;
-  top: -5rem;
-}
-.premium .plan-price {
-  padding-top: 5rem;
-}
-.plan-price {
-  font-size: 3.4rem;
-}
-.plan-period {
-  font-size: 2rem;
-}
-.plan-name {
-  background-color: rgb(88, 136, 44);
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  padding: 1rem 0;
-}
-.features li {
-  font-size: 2rem;
-  padding: 1rem 0;
-}
-.subscribe {
-  font-size: 1.8rem;
-  background-color: rgb(207, 204, 28);
-  padding: 1rem 2rem;
-  font-size: 200;
-  border-radius: 5px;
-  cursor: pointer;
-  color: #000;
-  position: relative;
-  bottom: -14px;
-}
-.subscribe:hover {
-  background-color: rgb(236, 234, 87);
-}
-/* Footer styling */
-#footer {
-  background-color: rgb(56, 52, 56);
-  color: #fff;
-}
-#footer p {
-  font-size: 1.6rem;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (max-width: 1200px) {
-  #products {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(3, 45vh);
-    gap: 1rem;
-    justify-content: space-between;
-  }
-  #video {
-    width: 80vw;
-    height: 50vh;
-    margin-left: 10vw;
-    border-radius: 10px;
-  }
-  #plans {
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    margin-top: 10rem;
-    justify-content: center;
-  }
-  .premium {
-    background-color: rgb(65, 17, 9);
-    color: #fff;
-    height: 45vh;
-    position: relative;
-    top: -4.3rem;
-  }
-}
-
-@media (max-width: 900px) {
-  #products {
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    grid-template-rows: repeat(3, 42vh);
-    gap: 1rem;
-    justify-content: space-between;
-  }
-
-  .product-cards h4 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
     margin: 1rem 0;
-  }
-  .product-cards a {
+}
+
+.product-cards a {
     font-size: 1.6rem;
     font-weight: 200;
     text-align: center;
@@ -349,66 +216,85 @@ button {
     color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 5px;
-    margin-left: 30%;
+    margin-left: 33%;
     text-shadow: 4px 4px 10px rgb(25, 26, 25);
-  }
+}
 
-  #video {
-    width: 100vw;
+.product-cards a:hover {
+    background-color: rgb(245, 63, 154);
+}
+
+/* Video Styling */
+#video-section {
+    padding: 2rem 0;
+    background-color: rgba(129, 9, 83, 0.952);
+}
+
+#video {
+    width: 60%;
     height: 50vh;
-    margin-left: 0;
+    margin-left: 20%;
     border-radius: 10px;
-  }
+}
 
-  #plans {
+#plans {
     display: grid;
-    grid-template-columns: repeat(3, 32%);
+    grid-template-columns: repeat(3, 25%);
     margin-top: 10rem;
     justify-content: center;
-  }
-  .plan-card {
+}
+
+.plan-card {
     height: 40vh;
     border-radius: 10px;
     text-align: center;
     align-items: center;
-  }
+}
 
-  .free {
+.free {
     background-color: teal;
     color: #fff;
-  }
-  .standard {
+}
+
+.standard {
     background-color: rgb(16, 110, 82);
     color: #fff;
-  }
-  .premium {
+}
+
+.premium {
     background-color: rgb(65, 17, 9);
     color: #fff;
     height: 45vh;
     position: relative;
-    top: -4.3rem;
-  }
-  .premium .plan-price {
+    top: -5rem;
+}
+
+.premium .plan-price {
     padding-top: 5rem;
-  }
-  .plan-price {
-    font-size: 3.2rem;
-  }
-  .plan-period {
-    font-size: 1.7rem;
-  }
-  .plan-name {
+}
+
+.plan-price {
+    font-size: 3.4rem;
+}
+
+.plan-period {
+    font-size: 2rem;
+}
+
+.plan-name {
     background-color: rgb(88, 136, 44);
     font-size: 2.8rem;
     text-transform: uppercase;
     padding: 1rem 0;
-  }
-  .features li {
-    font-size: 1.6rem;
+}
+
+.features li {
+    font-size: 2rem;
     padding: 1rem 0;
-  }
-  .subscribe {
-    font-size: 1.6rem;
+}
+
+.subscribe {
+    font-size: 1.8rem;
     background-color: rgb(207, 204, 28);
     padding: 1rem 2rem;
     font-size: 200;
@@ -417,220 +303,381 @@ button {
     color: #000;
     position: relative;
     bottom: -14px;
-  }
+}
+
+.subscribe:hover {
+    background-color: rgb(236, 234, 87);
+}
+
+/* Footer styling */
+#footer {
+    background-color: rgb(56, 52, 56);
+    color: #fff;
+}
+
+#footer p {
+    font-size: 1.6rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #products {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(3, 45vh);
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    #video {
+        width: 80vw;
+        height: 50vh;
+        margin-left: 10vw;
+        border-radius: 10px;
+    }
+
+    #plans {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        margin-top: 10rem;
+        justify-content: center;
+    }
+
+    .premium {
+        background-color: rgb(65, 17, 9);
+        color: #fff;
+        height: 45vh;
+        position: relative;
+        top: -4.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #products {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: repeat(3, 42vh);
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .product-cards h4 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .product-cards a {
+        font-size: 1.6rem;
+        font-weight: 200;
+        text-align: center;
+        background-color: rgb(192, 22, 107);
+        color: #fff;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        margin-left: 30%;
+        text-shadow: 4px 4px 10px rgb(25, 26, 25);
+    }
+
+    #video {
+        width: 100vw;
+        height: 50vh;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+
+    #plans {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        margin-top: 10rem;
+        justify-content: center;
+    }
+
+    .plan-card {
+        height: 40vh;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .free {
+        background-color: teal;
+        color: #fff;
+    }
+
+    .standard {
+        background-color: rgb(16, 110, 82);
+        color: #fff;
+    }
+
+    .premium {
+        background-color: rgb(65, 17, 9);
+        color: #fff;
+        height: 45vh;
+        position: relative;
+        top: -4.3rem;
+    }
+
+    .premium .plan-price {
+        padding-top: 5rem;
+    }
+
+    .plan-price {
+        font-size: 3.2rem;
+    }
+
+    .plan-period {
+        font-size: 1.7rem;
+    }
+
+    .plan-name {
+        background-color: rgb(88, 136, 44);
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        padding: 1rem 0;
+    }
+
+    .features li {
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+
+    .subscribe {
+        font-size: 1.6rem;
+        background-color: rgb(207, 204, 28);
+        padding: 1rem 2rem;
+        font-size: 200;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #000;
+        position: relative;
+        bottom: -14px;
+    }
 }
 
 @media (max-width: 600px) {
-  #header {
-    display: flex;
-    flex-flow: column;
-    padding: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(56, 52, 56);
-    color: #fff;
-    padding-top: 1rem;
-  }
+    #header {
+        display: flex;
+        flex-flow: column;
+        padding: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(56, 52, 56);
+        color: #fff;
+        padding-top: 1rem;
+    }
 
-  #title {
-    flex: 1;
-    margin: 0 auto;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 4px 4px 10px rgb(170, 206, 41);
-  }
+    #title {
+        flex: 1;
+        margin: 0 auto;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 4px 4px 10px rgb(170, 206, 41);
+    }
 
-  .nav-link {
-    padding: 0 2rem;
-    font-size: 1.6rem;
-  }
+    .nav-link {
+        padding: 0 2rem;
+        font-size: 1.6rem;
+    }
 
-  #banner {
-    display: flex;
-    flex-flow: column-reverse;
-    justify-content: space-between;
-    background: linear-gradient(
-      90deg,
-      rgba(57, 200, 125, 1) 0%,
-      rgba(40, 170, 100, 1) 0%,
-      rgba(41, 163, 157, 0) 20%,
-      rgba(39, 145, 167, 1) 100%
-    );
-    color: #fff;
-  }
-  .banner-image img {
-    width: 100vw;
-    background-size: cover;
-    margin-bottom: -0.5rem;
-  }
+    #banner {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-between;
+        background: linear-gradient(90deg,
+                rgba(57, 200, 125, 1) 0%,
+                rgba(40, 170, 100, 1) 0%,
+                rgba(41, 163, 157, 0) 20%,
+                rgba(39, 145, 167, 1) 100%);
+        color: #fff;
+    }
 
-  #banner #form {
-    background: rgba(216, 31, 139, 0.4)
-      url("https://www.telegraph.co.uk/content/dam/food-and-drink/2018/06/01/TELEMMGLPICT000165138627_trans%2B%2BNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.jpeg")
-      no-repeat center;
-    background-size: cover;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    /* justify-content: center; */
-    width: 100vw;
-  }
+    .banner-image img {
+        width: 100vw;
+        background-size: cover;
+        margin-bottom: -0.5rem;
+    }
 
-  #form #email {
-    width: 90%;
-    font-size: 1.6rem;
-    padding: 0.6rem 2rem;
-    margin-top: 3rem;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    background-color: rgba(129, 9, 83, 0.952);
-    color: #fff;
-    opacity: 1;
-  }
+    #banner #form {
+        background: rgba(216, 31, 139, 0.4) url("https://www.telegraph.co.uk/content/dam/food-and-drink/2018/06/01/TELEMMGLPICT000165138627_trans%2B%2BNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.jpeg") no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        /* justify-content: center; */
+        width: 100vw;
+    }
 
-  #form #submit {
-    border: none;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    padding: 0.5rem 3rem;
-    border-radius: 10px;
-    background-color: rgb(143, 10, 77);
-    color: #fff;
-    text-shadow: 4px 4px 10px rgb(25, 26, 25);
-    opacity: 1;
-  }
+    #form #email {
+        width: 90%;
+        font-size: 1.6rem;
+        padding: 0.6rem 2rem;
+        margin-top: 3rem;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        background-color: rgba(129, 9, 83, 0.952);
+        color: #fff;
+        opacity: 1;
+    }
 
-  #how-to-order .card {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-around;
-    padding: 3rem 0;
-  }
-  .how-to-order-cards {
-    border-radius: 20px;
-  }
+    #form #submit {
+        border: none;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem 3rem;
+        border-radius: 10px;
+        background-color: rgb(143, 10, 77);
+        color: #fff;
+        text-shadow: 4px 4px 10px rgb(25, 26, 25);
+        opacity: 1;
+    }
 
-  .how-to-order-cards .icon {
-    font-size: 3rem;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  .how-to-order-cards h4 {
-    font-size: 2rem;
-    text-align: center;
-  }
+    #how-to-order .card {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-around;
+        padding: 3rem 0;
+    }
 
-  .how-to-order-cards p {
-    font-size: 1.6rem;
-    text-align: center;
-    padding: 1rem 0.6rem 2rem 0.6rem;
-  }
+    .how-to-order-cards {
+        border-radius: 20px;
+    }
 
-  /* Products Styling */
+    .how-to-order-cards .icon {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
 
-  #products {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(8, 60vh);
-    gap: 2rem;
-    justify-content: space-around;
-  }
+    .how-to-order-cards h4 {
+        font-size: 2rem;
+        text-align: center;
+    }
 
-  .product-cards h4 {
-    font-size: 2.2rem;
-    text-align: center;
-    margin: 1rem 0;
-  }
-  .product-cards a {
-    font-size: 1.6rem;
-    font-weight: 200;
-    text-align: center;
-    background-color: rgb(192, 22, 107);
-    color: #fff;
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    margin-left: 33vw;
-    text-shadow: 4px 4px 10px rgb(25, 26, 25);
-  }
+    .how-to-order-cards p {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1rem 0.6rem 2rem 0.6rem;
+    }
 
-  #plans {
-    display: grid;
-    grid-template-columns: 80%;
-    margin-top: 6rem;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 5rem;
-  }
-  .plan-card {
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    height: 30rem;
-  }
-  .free {
-    background-color: teal;
-    color: #fff;
-  }
-  .standard {
-    background-color: rgb(16, 110, 82);
-    color: #fff;
-  }
-  .premium {
-    background-color: rgb(65, 17, 9);
-    color: #fff;
-    /* height: inherit; */
-    position: relative;
-    top: 0rem;
-  }
-  .premium .plan-price {
-    padding-top: 0rem;
-  }
-  .plan-price {
-    font-size: 2.8rem;
-    margin-top: 1rem;
-  }
-  .plan-period {
-    font-size: 1.6rem;
-  }
-  .plan-name {
-    background-color: rgb(88, 136, 44);
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    padding: 1rem 0;
-  }
-  .features li {
-    font-size: 1.6rem;
-    padding: 0.5rem 0;
-  }
-  .subscribe {
-    font-size: 1.6rem;
-    background-color: rgb(207, 204, 28);
-    padding: 0.8rem 2rem;
-    font-size: 200;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #000;
-    position: relative;
-    bottom: -2rem;
-  }
-  .subscribe:hover {
-    background-color: rgb(236, 234, 87);
-  }
+    /* Products Styling */
+
+    #products {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(8, 60vh);
+        gap: 2rem;
+        justify-content: space-around;
+    }
+
+    .product-cards h4 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .product-cards a {
+        font-size: 1.6rem;
+        font-weight: 200;
+        text-align: center;
+        background-color: rgb(192, 22, 107);
+        color: #fff;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        margin-left: 33vw;
+        text-shadow: 4px 4px 10px rgb(25, 26, 25);
+    }
+
+    #plans {
+        display: grid;
+        grid-template-columns: 80%;
+        margin-top: 6rem;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .plan-card {
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        height: 30rem;
+    }
+
+    .free {
+        background-color: teal;
+        color: #fff;
+    }
+
+    .standard {
+        background-color: rgb(16, 110, 82);
+        color: #fff;
+    }
+
+    .premium {
+        background-color: rgb(65, 17, 9);
+        color: #fff;
+        /* height: inherit; */
+        position: relative;
+        top: 0rem;
+    }
+
+    .premium .plan-price {
+        padding-top: 0rem;
+    }
+
+    .plan-price {
+        font-size: 2.8rem;
+        margin-top: 1rem;
+    }
+
+    .plan-period {
+        font-size: 1.6rem;
+    }
+
+    .plan-name {
+        background-color: rgb(88, 136, 44);
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        padding: 1rem 0;
+    }
+
+    .features li {
+        font-size: 1.6rem;
+        padding: 0.5rem 0;
+    }
+
+    .subscribe {
+        font-size: 1.6rem;
+        background-color: rgb(207, 204, 28);
+        padding: 0.8rem 2rem;
+        font-size: 200;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #000;
+        position: relative;
+        bottom: -2rem;
+    }
+
+    .subscribe:hover {
+        background-color: rgb(236, 234, 87);
+    }
 }
 
 @media (max-width: 400px) {
-  #nav-bar {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-  }
+    #nav-bar {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
 
-  #how-to-order .card {
-    display: grid;
-    grid-template-columns: 80%;
-    justify-content: space-around;
-    padding: 3rem 0;
-  }
+    #how-to-order .card {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: space-around;
+        padding: 3rem 0;
+    }
 }
